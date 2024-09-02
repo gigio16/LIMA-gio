@@ -1,0 +1,102 @@
+/* MENU------------------------------------------------------------------------------------------ */
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+nav {
+    background-color: rgb(176, 56, 56);
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* BANNER----------------------------------------------------------------------------------------------------- */
+
+.slider {
+    width: 70%;
+    max-width: 800px;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    width: 98%;
+    animation: slideAnimation 9s infinite;
+}
+.slide{
+    width: 100%;
+    flex-shrink: 0;
+
+}
+
+.slide img {
+    width: 100%;
+    display: block;
+    
+}
+
+@keyframes slideAnimation {
+    0% { transform: translateX(0); }
+    33.33% { transform: translateX(-100%); }
+    66.66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}
+/* CARD----------------------------------------------------------------------------------- */
+
+
+.container{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: white;
+    border: 1px solid #add ;
+    border-radius: 8px;
+    padding: 20px;
+    box: shadow 0 2px 5px rgba(0,0,0,0.1);
+    flex: 1;
+    max-width: 300px;
+}
+
+.card h2{
+margin-top: 0;
+font-size: 1 5em;
+color: #333;
+}
+
+.card p{
+color: #666;
+}
+.pokemon{
+    width: 60%;
+}
+/* RODAPE----------------------------------------------------------------------------------- */
+.rodape{
+    background-color: rgb(176, 56, 56);
+    color: white;
+}

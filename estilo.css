@@ -1,4 +1,18 @@
 /* MENU------------------------------------------------------------------------------------------ */
+/* botao */
+.botao-login{
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
 .container{
     width: 80%;
     margin: 0 auto;
@@ -75,7 +89,7 @@ p {
 }
 .card{
     background-color: white;
-    border: 1px solid #add ;
+    border: 1px solid red ;
     border-radius: 8px;
     padding: 20px;
     box: shadow 0 2px 5px rgba(0,0,0,0.1);
@@ -95,7 +109,87 @@ color: #666;
 .pokemon{
     width: 60%;
 }
-/* RODAPE----------------------------------------------------------------------------------- */
+/* Galeria --------------------------------------------------------------------------------------------- */
+
+body galeria-font{
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+
+.galeria-container {
+    display: flex; 
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+    padding: 20px;
+    width: 80%;
+    margin: auto; 
+}
+
+
+.galeria-container:hover .galeria-item {
+    opacity: 0.5;
+}
+
+.galeria-item:hover {
+    opacity: 1; 
+    transform: translateY(-20px); 
+}
+
+
+.galeria-item {
+    margin: 10px;
+    border: 2px solid #ddd; 
+    border-radius: 5px;
+    overflow: hidden;
+    width: 200px; 
+    box-sizing: border-box;
+    transition: all .3s;
+}
+
+
+.galeria-item img {
+    width: 100%; 
+    height: auto; 
+}
+
+
+@media (max-width: 600px) {
+    .galeria-item {
+        width: 100%; 
+    }
+}
+
+/* Botao------------------------------------------------------------------------------------------------------------ */
+
+
+.container {
+    text-align: center;
+}
+
+.container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    color: red;
+}
+
+.botao {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 16px;
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    /* RODAPE----------------------------------------------------------------------------------- */
 .rodape{
     background-color: rgb(176, 56, 56);
     color: white;
